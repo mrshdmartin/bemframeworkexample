@@ -1,0 +1,63 @@
+.bx-wrapper .bx-viewport {
+	box-shadow:none !important;
+	border:none;
+	background-color:transparent;
+}
+.TextSlider {
+	background-color:red;
+}
+.TextSlider-listItem {
+	 -webkit-box-sizing: border-box; 
+	 -moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+
+.TextSlider-numberText {
+	font-size:24px;
+	line-height:32px;
+}
+.TextSlider-numberText>span{
+	font-size:24px;
+	line-height:32px;
+
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	text-indent:initial;
+	text-decoration:none;
+	width:44px;
+	height:44px;
+	border-radius:50%;
+	line-height:44px;
+	background-color:transparent;
+	border:2px solid transparent;
+
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background-color:white;
+	border:2px solid purple;/* Database to be same border colour as the link colour*/
+}
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(/ui_examples/images/controls.png) no-repeat 0 -32px;
+}
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(/ui_examples/images/controls.png) no-repeat -43px -32px;
+}
+.bx-controls-direction {
+	display:none;
+	
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	bottom:-50px;
+}
+.bx-prev, .bx-next {
+	padding:10px 20px 10px 20px;
+	display:inline-block;
+	box-sizing:border-box;
+	width:100%;
+	text-align:right;
+}
+.bx-prev {
+	text-align:left;
+}

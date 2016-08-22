@@ -1,0 +1,42 @@
+body {
+	font-family:arial, sans-serif, verdana;
+	font-size:1.125em;
+}
+h1 {
+	font-size:2em;
+}
+.container {
+	max-width:600px;
+	min-width:320px;
+}
+
+/******* Footer Styles **********/
+.footer {
+	border-top:1px solid rgba(0,0,0,0.3);
+	padding:10px 0px;
+}
+.tnc {
+	margin:20px 0px;
+}
+.tnc-listItem, .tnc-copyright, .socailLinks {
+	margin:10px 0px;
+}
+
+.socialLinks-itemLink  {
+	display:inline-block;
+}
+.socialLinks-listItem svg {
+	margin-right:10px;
+	transition: fill .4s ease;
+	width:40px;
+	height:40px;
+}
+.socialLinks-listItem .twitter:hover {
+	fill:#55acee;
+}
+.socialLinks-listItem .linkedIn:hover {
+	fill:#4875B4;
+}
+.socialLinks-listItem .facebook:hover {
+	fill:#3B5998;
+}

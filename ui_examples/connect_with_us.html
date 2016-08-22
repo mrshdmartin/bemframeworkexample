@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link href="/ui_examples/stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/grid.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/image.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/flipper.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/connect.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/uc_example.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/utilities.css" media="all" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 9]>
+		      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<style>
+				.Flipper-cardBack.Flipper-cardFace {display:none;}
+		
+				.Flipper:hover .Flipper-cardFace.Flipper-cardBack, .Flipper--rotateY:hover .Flipper-cardFace.Flipper-cardBack{
+					display:inline-block;
+				}
+			.Flipper:hover .Flipper-cardFace.Flipper-cardFront, .Flipper--rotateY:hover .Flipper-cardFace.Flipper-cardFront{
+				display:none;
+			}
+		
+			</style>
+		 <![endif]-->
+			
+</head>
+<body>
+	<!-- Connect with us snippet starts here-->
+	<div class="ConnectWithUs u-textCenter u-sizeFull">
+		<!-- Connections starts here-->
+		<div class="ConnectBox-contacts u-paddingTl uc-connect-contacts-bg-color uc-button-corners u-inlineBlock u-textCenter u-marginRm u-marginLm u-marginBl"><!-- If only one connection remove margin right-->
+			<img class="ConnectBox-photo" alt="test" src="http://res.cloudinary.com/hle9tm0yh/image/upload/v1361281284/sample_image.png"/>
+			<div class="ConnectBox-name">
+				<h2 class="ConnectBox-title u-paddingAl uc-content-font-title-header">Name Here</h2>
+			</div>
+			<div class="ConnectBox-socialIcons u-sizeFull">
+				<!-- Flipper starts here-->
+				<div class="Flipper">
+					<div class="Flipper-card">
+				  	 	<div class="Flipper-cardFront Flipper-cardFace uc-flipperfront-bg-color u-textCenter">
+					 	 	<div class="Flipper-heightFixFront">
+								<h2 class="uc-content-font-title-header uc-flipper-title-font-color">Connect with us</h2>
+							</div>	
+				  	  	</div>
+				  	  	<div class="Flipper-cardBack Flipper-cardFace uc-flipperback-bg-color u-textCenter">
+					  		<div class="Flipper-heightFixBack">
+								<div class="ConnectBox-socialIcons u-sizeFull u-paddingTl u-paddingBl">
+									<ul class="socialList u-inlineBlock">
+										<li class="socialList-listItem uc-sociallist-bg-color u-inlineBlock u-marginRs u-marginBs u-paddingAs"><a class="socialList-itemLink" href="#"><img class="socialList-imageLink" alt"#" src="/ui_examples/images/twitter.png"></a></li>
+										<li class="socialList-listItem uc-sociallist-bg-color u-inlineBlock u-marginRs u-marginBs u-paddingAs"><a class="socialList-itemLink" href="#"><img class="socialList-imageLink" alt"#" src="/ui_examples/images/skype.png"></a></li>
+										<li class="socialList-listItem uc-sociallist-bg-color u-inlineBlock u-marginRs u-marginBs u-paddingAs"><a class="socialList-itemLink" href="#"><img class="socialList-imageLink" alt"#" src="/ui_examples/images/mail.png"></a></li>
+										<li class="socialList-listItem uc-sociallist-bg-color u-inlineBlock u-marginRs u-marginBs u-paddingAs"><a class="socialList-itemLink" href="#"><img class="socialList-imageLink" alt"#" src="/ui_examples/images/fb.png"></a></li>
+										<li class="socialList-listItem uc-sociallist-bg-color u-inlineBlock u-marginRs u-marginBs u-paddingAs"><a class="socialList-itemLink" href="#"><img class="socialList-imageLink" alt"#" src="/ui_examples/images/linkedin.png"></a></li>
+										<li class="socialList-listItem uc-sociallist-bg-color u-inlineBlock u-marginRs u-marginBs u-paddingAs"><a class="socialList-itemLink" href="#"><img class="socialList-imageLink" alt"#" src="/ui_examples/images/mail.png"></a></li>
+										
+										
+									</ul>
+								</div>
+							</div>
+				  	  	</div>
+					</div>
+				</div>
+				<!-- Flipper ends here-->
+			</div>
+		</div>
+		<!-- Connections ends here-->
+		<!-- Add more connections here-->
+	</div>	
+	<!-- Connect with us snippet ends here-->
+	
+	<script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+	<script>
+	$(window).load(function(){	
+	  imageTileGalleryResize();
+	   $(window).resize(imageTileGalleryResize);
+	});
+	
+	function imageTileGalleryResize() {
+		$('.Flipper').each(function(){
+		newHeight = ($('.Flipper-heightFixFront',this).outerHeight() < $('.Flipper-heightFixBack',this).outerHeight()) ? $('.Flipper-heightFixBack',this).outerHeight() : $('.Flipper-heightFixFront',this).outerHeight()
+			$(this).height(newHeight);	
+		});
+	}
+	</script>
+	<script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+	<script>
+	$(window).load(function(){	
+	  imageTileGalleryResize();
+	   $(window).resize(imageTileGalleryResize);
+	});
+	
+	function imageTileGalleryResize() {
+		$('.Flipper, .Flipper--rotateY').each(function(){
+		newHeight = ($('.Flipper-heightFixFront',this).outerHeight() < $('.Flipper-heightFixBack',this).outerHeight()) ? $('.Flipper-heightFixBack',this).outerHeight() : $('.Flipper-heightFixFront',this).outerHeight()
+			$(this).height(newHeight);	
+		});
+	}
+	</script>
+</body>
+</html>

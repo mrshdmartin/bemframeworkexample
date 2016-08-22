@@ -1,0 +1,8 @@
+.TallTabHeader {
+	display:inline-block;
+	width:100%;
+}
+
+.TallTabHeader-navigation /* This will need changing for tablet and desktop in media queries */{
+	width:230px;
+}

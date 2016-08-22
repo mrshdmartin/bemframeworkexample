@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link href="/ui_examples/stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/grid.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/image.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/title.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/paragraph.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/flipper.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/uc_example.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/utilities.css" media="all" rel="stylesheet" type="text/css" />
+	<!--[if lte IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<style>
+			.Flipper-cardBack.Flipper-cardFace {display:none;}
+		
+			.Flipper:hover .Flipper-cardFace.Flipper-cardBack, .Flipper--rotateY:hover .Flipper-cardFace.Flipper-cardBack{
+				display:inline-block;
+			}
+		.Flipper:hover .Flipper-cardFace.Flipper-cardFront, .Flipper--rotateY:hover .Flipper-cardFace.Flipper-cardFront{
+			display:none;
+		}
+		
+		</style>
+	 <![endif]-->
+
+</head>	
+<body>
+	
+<!-- Default Flipper control rotating on the X axis -->	
+<div class="Flipper">
+	<div class="Flipper-card">
+  	 	<div class="Flipper-cardFront Flipper-cardFace u-textCenter">
+	 	 	<div class="Flipper-heightFixFront">
+				<h1 class="Title u-paddingTl u-paddingBl uc-content-font-title-header">
+				New Title
+				</h1>
+			</div>	
+  	  	</div>
+  	  	<div class="Flipper-cardBack Flipper-cardFace u-textCenter">
+	  		<div class="Flipper-heightFixBack u-verticalCenter u-sizeFull">
+				
+			    <p class="uc-content-font">Any <a href="javascript:alert('foo');">content can go here.</a>
+				</p>
+			</div>
+  	  </div>
+	</div>
+</div>
+
+<!-- Flipper control rotating on the Y axis -->	
+<div class="Flipper--rotateY">
+	<div class="Flipper-card">
+  	 	<div class="Flipper-cardFront Flipper-cardFace u-textCenter">
+	 	 	<div class="Flipper-heightFixFront">
+			<h1 class="Title u-paddingTl u-paddingBl uc-content-font-title-header">
+			New Title
+			</h1>	
+			</div>	
+  	  	</div>
+  	  	<div class="Flipper-cardBack Flipper-cardFace u-textCenter">
+	  		<div class="Flipper-heightFixBack u-verticalCenter u-sizeFull">
+				
+			    <p class="uc-content-font">Any <a href="javascript:alert('foo');">content can go here.</a>
+				</p>
+			</div>
+  	  </div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	$(window).load(function(){	
+	  imageTileGalleryResize();
+	   $(window).resize(imageTileGalleryResize);
+	});
+	
+	function imageTileGalleryResize() {
+		$('.Flipper, .Flipper--rotateY').each(function(){
+		newHeight = ($('.Flipper-heightFixFront',this).outerHeight() < $('.Flipper-heightFixBack',this).outerHeight()) ? $('.Flipper-heightFixBack',this).outerHeight() : $('.Flipper-heightFixFront',this).outerHeight()
+			$(this).height(newHeight);	
+		});
+	}
+	</script>
+</body>
+</html>

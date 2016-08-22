@@ -1,0 +1,6 @@
+.ImageTileGallery .grid_6 .ImageMedia .Paragraph {
+	font-size:16px;
+}
+.ImageTileGallery .grid_4 .ImageMedia .Paragraph, .ImageTileGallery-paragraph {
+	font-size:12px;
+}

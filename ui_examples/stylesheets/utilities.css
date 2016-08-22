@@ -1,0 +1,536 @@
+/* ==========================================================================
+   Layout utilities
+   ========================================================================== */
+
+/**
+ * Vertical alignment utilities
+ * Depends on an appropriate `display` value.
+ */
+
+.u-alignTop {
+    vertical-align: top !important;
+}
+
+.u-alignMiddle {
+    vertical-align: middle !important;
+}
+
+.u-alignBaseline {
+    vertical-align: baseline !important;
+}
+
+.u-alignBottom {
+    vertical-align: bottom !important;
+}
+
+/**
+ * Contain floats
+ *
+ * Make an element expand to contain floated children.
+ * Uses pseudo-elements (micro clearfix).
+ *
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of the
+ *    element.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.u-cf:before,
+.u-cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.u-cf:after {
+    clear: both;
+}
+
+/**
+ * New block formatting context
+ *
+ * This affords some useful properties to the element. It won't wrap under
+ * floats. Will also contain any floated children.
+
+ * N.B. This will clip overflow. Use the alternative method below if this is
+ * problematic.
+ */
+
+.u-nbfc {
+    overflow: hidden !important;
+}
+
+/**
+ * New block formatting context (alternative)
+ *
+ * Alternative method when overflow must not be clipped.
+ *
+ * 1. Create a new block formatting context (NBFC).
+ * 2. Avoid shrink-wrap behaviour of table-cell.
+ *
+ * N.B. This breaks down in some browsers when elements within this element
+ * exceed its width.
+ */
+
+.u-nbfcAlt {
+    display: table-cell !important; /* 1 */
+    width: 10000px !important; /* 2 */
+}
+
+/**
+ * Floats
+ */
+
+.u-pullLeft {
+    float: left !important;
+}
+
+.u-pullRight {
+    float: right !important;
+}
+.u-pullNone {
+	float:none !important;
+}
+/**
+ * Object position helpers.
+ *
+ * Float an object left or right, and include some space between the object and
+ * proceeding objects.
+ */
+
+.u-objLeft {
+    float: left !important;
+    margin-right: 10px;
+}
+
+.u-objRight {
+    float: right !important;
+    margin-left: 10px;
+}
+
+/**
+ * 1. Remove excess space below images
+ * 2. Guard against `img {max-width:100%}` hiding this utility's images in
+ *    IE 8.
+ */
+
+.u-objLeft img,
+.u-objRight img {
+    display: block; /* 1 */
+    max-width: none; /* 2 */
+}
+
+/* ==========================================================================
+   Display utilities
+   ========================================================================== */
+
+/**
+ * Display-type utilities
+ */
+
+.u-inline {
+    display: inline !important;
+}
+
+.u-inlineBlock {
+    display: inline-block !important;
+}
+
+.u-block {
+    display: block !important;
+}
+
+.u-table {
+    display: table !important;
+}
+
+.u-tableCell {
+    display: table-cell !important;
+}
+
+/* ==========================================================================
+   Text utilities
+   ========================================================================== */
+
+/**
+ * Horizontal text alignment
+ */
+
+.u-textCenter {
+    text-align: center !important;
+}
+
+.u-textLeft {
+    text-align: left !important;
+}
+
+.u-textRight {
+    text-align: right !important;
+}
+
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+
+.u-textTruncate {
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
+}
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+
+.u-textBreak {
+    word-wrap: break-word !important;
+}
+
+/**
+ * Inherit the ancestor's text color.
+ */
+
+.u-textInheritColor {
+    color: inherit !important;
+}
+
+/**
+ * Inherit the ancestor's text color for all states.
+ */
+
+.u-textInheritAllColor,
+.u-textInheritAllColor:hover,
+.u-textInheritAllColor:focus,
+.u-textInheritAllColor:active {
+    color: inherit !important;
+}
+/* ==========================================================================
+   Dimension utilities
+   ========================================================================== */
+
+/* Intrinsic widths
+   ========================================================================== */
+
+/**
+ * Make an element shrink wrap its content.
+ */
+
+.u-sizeFit,
+.u-sizeFitAlt {
+    display: block !important;
+    float: left !important;
+    width: auto !important;
+}
+
+.u-sizeFitAlt {
+    float: right !important;
+}
+
+/**
+ * Make an element fill the remaining space.
+ * N.B. This will hide overflow.
+ */
+
+.u-sizeFill {
+    display: block !important;
+    overflow: hidden !important;
+    width: auto !important;
+}
+
+/**
+ * An alternative method to make an element fill the remaining space.
+ * N.B. Do not use if child elements might be wider than the remaining space.
+ * In Chrome, Safari, and Firefox it results in undesired layout.
+ */
+
+.u-sizeFillAlt {
+    display: table-cell !important;
+    max-width: 100% !important;
+    width: 10000px !important;
+}
+
+/**
+ * Make an element the width of its parent.
+ */
+
+.u-sizeFull {
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+/* Proportional widths
+   ========================================================================== */
+
+/**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+ */
+
+.u-size1of12 {
+    width: 8.333% !important;
+}
+
+.u-size1of10 {
+    width: 10% !important;
+}
+
+.u-size1of8 {
+    width: 12.5% !important;
+}
+
+.u-size1of6,
+.u-size2of12 {
+    width: 16.667% !important;
+}
+
+.u-size1of5,
+.u-size2of10 {
+    width: 20% !important;
+}
+
+.u-size1of4,
+.u-size2of8,
+.u-size3of12 {
+    width: 25% !important;
+}
+
+.u-size3of10 {
+    width: 30% !important;
+}
+
+.u-size1of3,
+.u-size2of6,
+.u-size4of12 {
+    width: 33.333% !important;
+}
+
+.u-size3of8 {
+    width: 37.5% !important;
+}
+
+.u-size2of5,
+.u-size4of10 {
+    width: 40% !important;
+}
+
+.u-size5of12 {
+    width: 41.667% !important;
+}
+
+.u-size1of2,
+.u-size2of4,
+.u-size3of6,
+.u-size4of8,
+.u-size5of10,
+.u-size6of12 {
+    width: 50% !important;
+}
+
+.u-size7of12 {
+    width: 58.333% !important;
+}
+
+.u-size3of5,
+.u-size6of10 {
+    width: 60% !important;
+}
+
+.u-size5of8 {
+    width: 62.5% !important;
+}
+
+.u-size2of3,
+.u-size4of6,
+.u-size8of12 {
+    width: 66.667% !important;
+}
+
+.u-size7of10 {
+    width: 70% !important;
+}
+
+.u-size3of4,
+.u-size6of8,
+.u-size9of12 {
+    width: 75% !important;
+}
+
+.u-size4of5,
+.u-size8of10 {
+    width: 80% !important;
+}
+
+.u-size5of6,
+.u-size10of12 {
+    width: 83.333% !important;
+}
+
+.u-size7of8 {
+    width: 87.5% !important;
+}
+
+.u-size9of10 {
+    width: 90% !important;
+}
+
+.u-size11of12 {
+    width: 91.667% !important;
+}
+/* ==========================================================================
+   Spacing-specific utilities
+   ========================================================================== */
+
+/**
+ * Used to adjust the default spacing between components
+ * Use with great care!
+ *
+ * u-<type><direction><size>
+ *
+ * A = all
+ * T = top
+ * R = right
+ * B = bottom
+ * L = left
+ * H = horizontal
+ * V = vertical
+ *
+ * n = none
+ * s = small
+ * m = medium
+ * l = large
+ * xl = extra large
+ * xxl = extra large
+ */
+
+/* All */
+
+.u-paddingAn { padding: 0 !important; }
+.u-paddingAs { padding: 5px !important; }
+.u-paddingAm { padding: 10px !important; }
+.u-paddingAl { padding: 20px !important; }
+
+.u-marginAn { margin: 0 !important; }
+.u-marginAs { margin: 5px !important; }
+.u-marginAm { margin: 10px !important; }
+.u-marginAl { margin: 20px !important; }
+
+/* Vertical */
+
+.u-paddingVn { padding-top: 0 !important; padding-bottom: 0 !important; }
+.u-paddingVs { padding-top: 5px !important; padding-bottom: 5px !important; }
+.u-paddingVm { padding-top: 10px !important; padding-bottom: 10px !important; }
+.u-paddingVl { padding-top: 20px !important; padding-bottom: 20px !important; }
+
+.u-marginVn { margin-top: 0 !important; margin-bottom: 0 !important; }
+.u-marginVs { margin-top: 5px !important; margin-bottom: 5px !important; }
+.u-marginVm { margin-top: 10px !important; margin-bottom: 10px !important; }
+.u-marginVl { margin-top: 20px !important; margin-bottom: 20px !important; }
+
+/* Horizontal */
+
+.u-paddingHn { padding-left: 0 !important; padding-right: 0 !important; }
+.u-paddingHs { padding-left: 5px !important; padding-right: 5px !important; }
+.u-paddingHm { padding-left: 10px !important; padding-right: 10px !important; }
+.u-paddingHl { padding-left: 20px !important; padding-right: 20px !important; }
+
+.u-marginHn { margin-left: 0 !important; margin-right: 0 !important; }
+.u-marginHs { margin-left: 5px !important; margin-right: 5px !important; }
+.u-marginHm { margin-left: 10px !important; margin-right: 10px !important; }
+.u-marginHl { margin-left: 20px !important; margin-right: 20px !important; }
+
+/* Top */
+
+.u-paddingTn { padding-top: 0 !important; }
+.u-paddingTs { padding-top: 5px !important; }
+.u-paddingTm { padding-top: 10px !important; }
+.u-paddingTl { padding-top: 20px !important; }
+.u-paddingTxl {padding-top:50px !important;} /* Added for desktop */
+.u-paddingTxxl{ padding-top:70px !important;} /* Added for tall-tabbed navigation */
+
+.u-marginTn { margin-top: 0 !important; }
+.u-marginTs { margin-top: 5px !important; }
+.u-marginTm { margin-top: 10px !important; }
+.u-marginTl { margin-top: 20px !important; }
+
+/* Bottom */
+
+.u-paddingBn { padding-bottom: 0 !important; }
+.u-paddingBs { padding-bottom: 5px !important; }
+.u-paddingBm { padding-bottom: 10px !important; }
+.u-paddingBl { padding-bottom: 20px !important; }
+.u-paddingBxl {padding-bottom:50px !important;} /* Added for desktop */
+.u-marginBn { margin-bottom: 0 !important; }
+.u-marginBs { margin-bottom: 5px !important; }
+.u-marginBm { margin-bottom: 10px !important; }
+.u-marginBl { margin-bottom: 20px !important; }
+
+/* Left */
+
+.u-paddingLn { padding-left: 0 !important; }
+.u-paddingLs { padding-left: 5px !important; }
+.u-paddingLm { padding-left: 10px !important; }
+.u-paddingLl { padding-left: 20px !important; }
+.u-paddingLxl {padding-left:50px !important;} /* Added for desktop */
+
+.u-marginLn { margin-left: 0 !important; }
+.u-marginLs { margin-left: 5px !important; }
+.u-marginLm { margin-left: 10px !important; }
+.u-marginLl { margin-left: 20px !important; }
+
+/* Right */
+
+.u-paddingRn { padding-right: 0 !important; }
+.u-paddingRs { padding-right: 5px !important; }
+.u-paddingRm { padding-right: 10px !important; }
+.u-paddingRl { padding-right: 20px !important; }
+.u-paddingRxl {padding-right:50px !important;} /* Added for desktop */
+
+.u-marginRn { margin-right: 0 !important; }
+.u-marginRs { margin-right: 5px !important; }
+.u-marginRm { margin-right: 10px !important; }
+.u-marginRl { margin-right: 20px !important; }
+
+.u-opacity {
+	opacity:0.5;
+	filter:alpha(opacity=40);
+}
+
+/* Vertical align a div */
+
+.u-verticalCenter{
+	position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    width: 50%;
+	    height: 30%;
+	    margin: auto;
+}
+.u-verticalCenter--pullRight {
+	position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    height: 37px;
+	    margin: auto;
+}
+.u-imageCover{
+		background-repeat:no-repeat !important;
+		background-size:cover !important;
+}	

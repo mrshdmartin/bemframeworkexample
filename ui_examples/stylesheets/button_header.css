@@ -1,0 +1,45 @@
+.ButtonHeader {
+	position:relative;
+}
+.ButtonHeader .Logo  {
+	height:40px;
+	width:75%;
+}
+.MenuButton {
+	position:absolute;
+	top:0;
+	right:0;
+	background-color:black;
+	width:50px;
+	height:100%;
+	cursor:pointer;
+
+}
+.MenuButton.uc-button {
+	border:none !important;
+	border-radius:0px !important;
+}
+.MenuButton .MenuButton-bars {
+
+	width:100%;
+}
+.Logo-linkImage {
+	max-width:200px;
+	max-height:40px;
+}
+.ButtonHeader .uc-nav-active--highlight:active, .uc-nav--highlight, .uc-nav-hover--highlight:hover {
+	border-right:none !important;
+}
+
+.icon-bar {
+	width:30px;
+	height:4px;
+	background-color:rgba(255,255,255,0.5);
+	display:block;
+	margin-bottom:4px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	margin:6px auto;
+
+}

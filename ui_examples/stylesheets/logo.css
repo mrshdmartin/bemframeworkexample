@@ -1,0 +1,11 @@
+figure {
+	margin:0px;
+	padding:0px;
+}
+
+.Logo {
+	margin:0px;
+}
+.Logo--withBorder {
+	border-bottom:1px solid;
+}

@@ -1,0 +1,25 @@
+/*.NavList-listItem {
+	border-bottom:1px solid #cccccc;
+	background-color: #e8e9ea; 
+}
+.NavList-listItem:hover {
+	background-color: rgba(0,0,0,0.3); 
+}
+.NavList--tabbed .NavList-listItem {
+	border-right:1px solid rgba(0,0,0,0.2);
+	border-left:1px solid rgba(255,255,255,0.5);
+}
+.NavList--tabbed .NavList-listItem:first-child {
+	border-left:1px solid rgba(255,255,255,0);
+}
+.NavList--tabbed .NavList-listItem:last-child {
+	border-right:1px solid rgba(0,0,0,0);
+}
+.NavList--tabbed .NavList-listItem--noBorder, .NavList-listItem--noBottomBorder {
+	border-bottom:none;
+}
+*/
+/* For icons */
+.fa {
+	color:red;
+}

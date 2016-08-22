@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link href="/ui_examples/stylesheets/normalize.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/grid.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/logo.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/logo_styles.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/tab_bar_header.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/tab_bar_header_styles.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/nav_list.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/nav_list_styles.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/desktop.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/utilities.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/tab_bar_mono.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/tab_bar_mono_styles.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/uc_example.css" media="all" rel="stylesheet" type="text/css" />
+	
+	<!--[if lt IE 10]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+</head>
+
+<!-- Been tested on Browserstack, problems with ie7 not picking up uc_example.css and navigation on Tab Bar Mono not postioned correctly  -->
+
+<body>
+	<h1>Default Tab Bar Mono Header</h1>
+	<!-- Tab Bar Mono Control Starts-->
+	<div class="TabBarMono uc-content-font uc-logo-bg-color">
+			<div class="content container clearfix">
+				<div class="row clearfix">
+					<div class="grid_6 grid_6--noMargin omega">
+						<div class="TitleBar TitleBar--fixHeight s-solidFill" >
+							<figure class="Logo u-verticalCenter">
+								<a class="Logo-link u-block" href="/msite/page/home">
+									<img class="Logo-linkImage u-size9of10" src="http://res.cloudinary.com/hpuyl5w5t/image/upload/sample_logo.png" alt="Sample Inc" />
+								</a>     
+							</figure>
+						</div>
+					</div>
+					<div class="grid_6 grid_6--noMargin">
+						<nav class="NavList NavList--tabbed NavList--tabbed--lozenge u-sizeFull">
+							<ul class="NavList-list u-sizeFull u-verticalCenter">
+								<li class="NavList-listItem NavList-listItem--firstChild NavList-listItem--noBottomBorder u-inlineBlock u-textCenter u-size1of3 uc-nav-bg-color uc-nav-hover--highlight"> <a class="NavList-itemLink uc-nav-text-color" href="/msite/page/culture">Culture</a></li>
+								<li class="NavList-listItem NavList-listItem--noBottomBorder u-inlineBlock u-textCenter u-size1of3 uc-nav-bg-color uc-nav-hover--highlight"> <a class="NavList-itemLink uc-nav-text-color" href="/msite/page/about">About</a></li>
+								<li class="NavList-listItem NavList-listItem--lastChild NavList-listItem--noBottomBorder u-inlineBlock u-textCenter u-size1of3 uc-nav-bg-color uc-nav-hover--highlight"> <a class="NavList-itemLink uc-nav-text-color" href="/msite/page/campaign_jobs">Jobs</a></li>
+							</ul>	
+						</nav>
+
+					</div>
+				</div>	
+			</div>
+	</div>
+	<!-- Tall Tab Bar Control Ends-->
+	
+	<h1>Single Capsule Tab Bar Mono Header</h1>
+	<!-- Single Capsule Tab Bar Mono Control Starts-->
+	<div class="TabBarMono uc-content-font uc-logo-bg-color">
+			<div class="content container clearfix">
+				<div class="row clearfix">
+					<div class="grid_4 omega">
+						<div class="TitleBar TitleBar--fixHeight s-solidFill" >
+							<figure class="Logo u-verticalCenter">
+								<a class="Logo-link u-block" href="/msite/page/home">
+									<img class="Logo-linkImage u-size9of10" src="http://res.cloudinary.com/hpuyl5w5t/image/upload/sample_logo.png" alt="Sample Inc" />
+								</a>     
+							</figure>
+						</div>
+					</div>
+					<div class="grid_8">
+						<nav class="NavList NavList--tabbed TitleBar TitleBar--fixHeight">
+							<ul class="NavList-list u-inlineBlock u-verticalCenter--pullRight">
+								<li class="NavList-listItem NavList-listItem--roundCorners NavList-listItem--firstChild NavList-listItem--noBottomBorder u-pullLeft u-textCenter uc-nav-bg-color--hover"><a class="NavList-itemLink uc-nav-text-color" href="/msite/page/culture">Culture</a></li>
+								<li class="NavList-listItem NavList-listItem--roundCorners NavList-listItem--noBottomBorder u-pullLeft u-textCenter uc-nav-bg-color--hover"> <a class="NavList-itemLink uc-nav-text-color" href="/msite/page/about">About</a></li>
+								<li class="NavList-listItem NavList-listItem--roundCorners NavList-listItem--lastChild NavList-listItem--noBottomBorder u-pullLeft u-textCenter uc-nav-bg-color--hover"> <a class="NavList-itemLink uc-nav-text-color" href="/msite/page/campaign_jobs">Jobs</a></li>
+							</ul>	
+						</nav>
+
+					</div>
+				</div>	
+			</div>
+	</div>
+	
+</body>
+</html>

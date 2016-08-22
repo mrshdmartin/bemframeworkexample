@@ -1,0 +1,34 @@
+.Hero-wrapper {
+	width:1024px;
+	margin:auto;
+}
+.Hero {
+	padding:40px 80px;
+}
+.triangle-down-left, .triangle-down-right {
+		overflow:hidden;
+	}
+
+.triangle-down-left:after {
+	    content: "";
+	    display: block;
+	    width: 0;
+	    height: 0;
+	    border-bottom: 50px solid white;
+	}
+.triangle-down-left-border:after {
+		border-right: 512px solid transparent;
+	}
+	
+.triangle-down-right:after {
+	    content: "";
+	       display: block;
+	       width: 0;
+	       height: 0;
+	       border-top: 50px solid transparent;
+	       
+	}
+.triangle-down-right-border:after {
+		border-right: 512px solid white;
+	}
+	

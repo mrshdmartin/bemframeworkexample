@@ -1,0 +1,22 @@
+.ImageNav-icon {
+	border-radius:50%;
+	background-color:rgba(0,0,0,1);
+	height:120px;
+	width:120px;
+	vertical-align:middle;
+	margin:auto;
+	box-shadow:inset 3px 3px 3px rgba(0,0,0,0.3);
+	box-sizing:border-box;
+
+
+}
+.ImageNav--alternating .ImageNav-icon {
+	background-color:rgba(0,0,0,0.5);
+}
+.ImageNav-iconImage {
+	line-height:120px;
+	vertical-align:middle;
+	height:100%;
+	width:100%;
+	
+}

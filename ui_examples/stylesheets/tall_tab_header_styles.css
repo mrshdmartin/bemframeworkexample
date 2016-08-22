@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Title Bar Fills
+   ========================================================================== */
+
+.TallTabHeader.s-gradientFill {
+	background: gray; /* Old browsers */
+	background: -webkit-linear-gradient(gray, black); /* For Safari */
+	background: -o-linear-gradient(gray, black); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(gray, black); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(gray, black); /* Standard syntax (must be last) */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='gray', endColorstr='black',GradientType=0 ); /* IE6-9 */
+	
+}
+.TallTabHeader.s-solidFill {
+	background-color:gray;
+}

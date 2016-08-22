@@ -1,0 +1,25 @@
+.TabBarMono {
+	width:100%;
+	min-height:100px;
+}
+
+.TabBarMono .TitleBar--fixHeight, .TabBarMono .NavList--tabbed--lozenge {
+	position:relative;
+	height:100px;
+}
+.NavList--tabbed--lozenge .NavList-listItem:first-child {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.NavList--tabbed--lozenge .NavList-listItem:last-child {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,84 @@
+/* THESE STYLES ARE IN HERE TEMP..... */
+.Button-defaultButton {
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color:rgba(0,0,0,0.5);
+	  border-radius: 4px;
+	  webkit-box-shadow: inset 0 20px 20px -10px rgba(255,255,255,0.8);
+	  	   -moz-box-shadow: inset 0 20px 20px -10px rgba(255,255,255,0.8);
+	  	        box-shadow: inset 0 20px 20px -10px rgba(255,255,255,0.8);
+	  color: #fff;
+	  cursor: pointer;
+	  font-weight: bold;
+	  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	  transition: all .1s linear;
+	font-weight:normal;
+	
+
+	
+}
+.Button-defaultButton:hover,
+.Button-defaultButton:focus,
+.Button-defaultButton:active {
+  webkit-box-shadow: inset 0 20px 20px -10px rgba(255,255,255,0.5);
+  	   -moz-box-shadow: inset 0 20px 20px -10px rgba(255,255,255,0.5);
+  	        box-shadow: inset 0 20px 20px -10px rgba(255,255,255,0.5);
+			color: rgba(255,255,255,0.8);
+			border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* START OF BUTTON.CSS */
+
+
+.Button-defaultButton {
+	webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-appearance: none; /* 1 */
+	border: 1px solid;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; /* 2 */
+	color: inherit; /* 3 */
+	cursor: pointer;
+	display: inline-block; /* 4 */
+	font: inherit; /* 5 */
+	line-height: normal; /* 6 */
+	margin: 10px auto;
+	padding: 0.4em 0.75em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+	 -webkit-user-select: none;
+	user-select: none; /* 7 */
+	white-space: normal; /* 8 */
+	}
+
+	/**
+	 * UI states
+	 */
+
+	.Button-defaultButton:hover,
+	.Button-defaultButton:focus,
+	.Button-defaultButton:active {
+	    text-decoration: none;
+	}
+
+	.Button-defaultButton:disabled,
+	.Button-defaultButton.is-disabled {
+	    cursor: default;
+	}
+
+	/**
+	 * Remove excess padding and border in Firefox 4+
+	 */
+
+	.Button-defaultButton::-moz-focus-inner {
+	    border: 0;
+	    padding: 0;
+	}
+	.footer ul {
+		padding:0;
+		margin:0;
+		list-style-type:none;
+	}

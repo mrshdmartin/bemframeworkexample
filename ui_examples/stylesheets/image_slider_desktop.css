@@ -1,0 +1,43 @@
+.bx-wrapper .bx-viewport {
+	box-shadow:none !important;
+	border:none;
+	background-color:transparent;
+}
+.ImageSlider {
+	width:100%;
+	background-color:#dde3e8;
+}
+.bx-wrapper .bx-controls-direction a {
+	
+}
+.ImageSlider-numberText {
+	font-size:100px;
+}
+.ImageSlider-numberText>span{
+	font-size:50px;
+
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	text-indent:initial;
+	text-decoration:none;
+	width:20px;
+	height:20px;
+	border-radius:20px;
+	line-height:20px;
+	background-color:transparent;
+	border:2px solid transparent;
+
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background-color:white;
+	border:2px solid purple;/* Database to be same border colour as the link colour*/
+}
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(/ui_examples/images/controls.png) no-repeat 0 -32px;
+}
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(/ui_examples/images/controls.png) no-repeat -43px -32px;
+}

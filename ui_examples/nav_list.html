@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<link href="/ui_examples/stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/nav_list.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/nav_list_styles.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/fa.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/utilities.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/ui_examples/stylesheets/uc_example.css" media="all" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 10]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+</head>
+<body style="margin:0px;padding:0px;">
+<h1>Example - NavList UI Component</h1>
+<h2>Default NavList</h2>
+<div>
+	<!-- 
+	component: NavList
+	use: displaying navigation links
+	old modifer: <nav class="collapsable_main_nav collapsed stick_top">
+	-->
+
+	<nav class="NavList" >
+		<ul class="NavList-list">
+				<li class="NavList-listItem"> <a class="NavList-itemLink" href="/msite/page/culture">Culture</a></li>
+				<li class="NavList-listItem"> <a class="NavList-itemLink" href="/msite/page/about">About</a></li>
+				<li class="NavList-listItem"> <a class="NavList-itemLink" href="/msite/page/campaign_jobs">Jobs</a></li>
+		</ul>	
+	</nav>
+
+</div>
+
+<h2>Tabbed NavList</h2>
+<div>
+	<nav class="NavList NavList--tabbed" >
+		<ul class="NavList-list">
+				<li class="NavList-listItem NavList-listItem--firstChild u-pullLeft u-textCenter u-size1of3"> <a class="NavList-itemLink" href="/msite/page/culture">Culture</a></li>
+				<li class="NavList-listItem u-pullLeft u-textCenter u-size1of3"> <a class="NavList-itemLink" href="/msite/page/about">About</a></li>
+				<li class="NavList-listItem NavList-listItem--last-child u-pullLeft u-textCenter u-size1of3"> <a class="NavList-itemLink" href="/msite/page/campaign_jobs">Jobs</a></li>
+		</ul>	
+	</nav>
+	
+</div>
+<!-- Will need media queries to change the width proportions on tall -->
+<h2>Tall Tabbed NavList</h2>
+<div class="">
+	<nav class="NavList NavList--tabbed" >
+		<ul class="NavList-list u-sizeFull">
+				<li class="NavList-listItem NavList-listItem--firstChild u-pullLeft u-textCenter u-size1of3"> <a class="NavList-itemLink u-paddingTxl" href="/msite/page/culture">Culture</a></li>
+				<li class="NavList-listItem u-pullLeft u-textCenter u-size1of3"> <a class="NavList-itemLink u-paddingTxl" href="/msite/page/about">About</a></li>
+				<li class="NavList-listItem NavList-listItem--last-child u-pullLeft u-textCenter u-size1of3"> <a class="NavList-itemLink u-paddingTxl" href="/msite/page/campaign_jobs">Jobs</a></li>
+		</ul>	
+	</nav>
+</div>
+
+
+<!-- Will need media queries to change the width proportions on tall -->
+<h2>Tall Tabbed NavList in a fixed width div</h2>
+
+<div style="background-color:blue;width:300px;display:inline-block;">
+	<div style="width:230px;background-color:red;float:right !important;">
+		<nav class="NavList NavList--tabbed " >
+			<ul class="NavList-list u-sizeFull" style="background-color:GREEN;">
+					<li class="NavList-listItem NavList-listItem--firstChild u-pullLeft u-textCenter" style="max-width: 33.334%;
+min-width: 33.333%;"> <a class="NavList-itemLink u-paddingTxl" href="/msite/page/culture">Culture</a></li>
+					<li class="NavList-listItem u-pullLeft u-textCenter" style="max-width: 33.334%;
+min-width: 33.333%;"> <a class="NavList-itemLink u-paddingTxl" href="/msite/page/about">About</a></li>
+					<li class="NavList-listItem NavList-listItem--lastChild u-pullLeft u-textCenter" style="max-width: 33.334%;
+min-width: 33.333%;"> <a class="NavList-itemLink u-paddingTxl" href="/msite/page/campaign_jobs">Jobs</a></li>
+			</ul>	
+		</nav>
+	</div>
+</div>
+
+<h1>Example - Graphic NavList UI Component</h1>
+<h2>Default Graphic NavList</h2>
+<div>
+	<!-- 
+	component: Graphical NavList
+	use: displaying navigation links with icons and arrows
+	-->
+		
+			<nav class="NavList">
+				<ul class="NavList-list">
+					<li class="NavList-listItem">
+						<a class="NavList-itemLink u-block u-alignMiddle" href="/msite/page/culture"><span class="fa">&#61445;</span>Requirements <span class="fa NavList-itemLink-rightArrow">&#61524;</span></a>
+					</li>
+					<li class="NavList-listItem">
+						<a class="NavList-itemLink u-block u-alignMiddle" href="/msite/page/about"><span class="fa">&#61444;</span>Responsibilites <span class="fa NavList-itemLink-rightArrow">&#61524;</span></a>
+					</li>
+				</ul>	
+			</nav>
+
+</div>
+
+
+</body>
+</html>

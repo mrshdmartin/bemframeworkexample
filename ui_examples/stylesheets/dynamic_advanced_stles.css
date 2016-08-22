@@ -1,0 +1,61 @@
+/* Slide 1 user configurable styles */
+
+.uc-slide-1.uc-content-bg, .uc-slide-1.uc-content-bg .Flipper-cardBack {
+	background-color:white;
+}
+.uc-slide-1.uc-content-font {
+	color:black;
+	font-family:;
+}
+.uc-slide-1.uc-content-font-title-header {
+	color:#e0162e;
+}
+.uc-slide-1.uc-content-font-link-color-a a {
+	color:blue;
+}
+.uc-slide-1.uc-button {
+	background:orange;
+	color:black;
+}
+.uc-slide-1.uc-button:hover {
+	background:red;
+}
+/* Slide 2 user configurable styles */
+
+.uc-slide-2.uc-content-bg {
+	background-color:#49c9af;
+}
+.uc-slide-2.uc-content-font {
+	color:white;
+}
+.uc-slide-2.uc-content-font-title-header {
+	color:white;
+}
+.uc-slide-2.uc-content-font-link-color-a a {
+	color:pink;
+}
+.uc-slide-2.uc-button {
+	background:orange;
+	color:black;
+}
+.uc-slide-2.uc-button:hover {
+	background:red;
+}
+/* Slide 3 user configurable styles */
+
+.uc-slide-3.uc-content-bg {
+	background-color:#53a8df;
+}
+.uc-slide-3.uc-content-font {
+	color:white;
+}
+.uc-slide-3.uc-content-font-title-header {
+	color:white;
+}
+.uc-slide-3.uc-button {
+	background:orange;
+	color:black;
+}
+.uc-slide-3.uc-button:hover {
+	background:red;
+}

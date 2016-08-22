@@ -1,0 +1,14 @@
+.ExpandBox {
+	padding:5px;
+	margin:0px;
+}
+.ExpandBox .Title {
+	border-bottom:1px solid;
+}
+.ExpandBox-collapsableLink{
+	display:block;
+	color:red;/*this needs to be the same as link colour */
+	cursor:pointer;
+	padding:5px;
+	margin:0px;
+}

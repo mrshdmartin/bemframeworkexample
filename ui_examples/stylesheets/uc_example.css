@@ -1,0 +1,419 @@
+/* admin configurable css */
+
+/* Button  --------------------------------------------------------- */
+.uc-button-bg-color {
+	background-color:#ebf5df;
+	background-color: #a6de5f;
+	background: -moz-linear-gradient(top,  #a6de5f 0%, #86bb42 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6de5f), color-stop(100%,#86bb42));
+	background: -webkit-linear-gradient(top,  #a6de5f 0%,#86bb42 100%);
+	background: -o-linear-gradient(top,  #a6de5f 0%,#86bb42 100%);
+	background: -ms-linear-gradient(top,  #a6de5f 0%,#86bb42 100%);
+	background: linear-gradient(to bottom,  #a6de5f 0%,#86bb42 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6de5f', endColorstr='#86bb42',GradientType=0 ); 
+}
+
+/* alpha based on button color */
+.uc-button-bg-color--brightness, *.uc-button-bg-color--brightness-active:active, *.uc-button-bg-color--brightness-hover:hover {
+	background-color: rgba(166,222,95,0.5);
+	background: -moz-linear-gradient(top,  rgba(166,222,95,0.5) 0%, rgba(134,187,66,0.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(166,222,95,0.5)), color-stop(100%,rgba(134,187,66,0.5)));
+	background: -webkit-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: -o-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: linear-gradient(to bottom,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(166,222,95,0.5)', endColorstr='rgba(134,187,66,0.5)',GradientType=0 );
+	background-color:black;	
+}
+
+.uc-button-bg-color--highlight, *.uc-button-bg-color--highlight-active:active, *.uc-button-bg-color--highlight-hover:hover  {
+	background-color: rgba(166,222,95,0.5);
+	background: -moz-linear-gradient(top,  rgba(166,222,95,0.5) 0%, rgba(134,187,66,0.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(166,222,95,0.5)), color-stop(100%,rgba(134,187,66,0.5)));
+	background: -webkit-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: -o-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: linear-gradient(to bottom,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(166,222,95,0.5)', endColorstr='rgba(134,187,66,0.5)',GradientType=0 );
+	background-color:black;
+}
+
+.uc-button-bg-color--contrast {
+	background-color:#bcc4b2;
+}
+
+.uc-button-text-color{
+   color:#ffffff;
+}
+
+*.uc-button-text-color:hover, .uc-button-text-color-hover {
+	/* was not previously create so no rules to migrate */
+}
+
+.uc-button-corners, .uc-button-corners-input input {
+		border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+}
+.uc-button-corners-top {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.uc-button-corners-bottom {
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/* - changes based on brightness of button background color */
+.uc-button-bg-color-border--highlight {
+		border:1px solid rgba(0,0,0,0.5);
+}
+
+/* - sets color, background color, border and corner.*/
+.uc-button {
+	color:#ffffff;
+	background-color:#ebf5df;
+	background-color: #a6de5f;
+	background: -moz-linear-gradient(top,  #a6de5f 0%, #86bb42 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6de5f), color-stop(100%,#86bb42));
+	background: -webkit-linear-gradient(top,  #a6de5f 0%,#86bb42 100%);
+	background: -o-linear-gradient(top,  #a6de5f 0%,#86bb42 100%);
+	background: -ms-linear-gradient(top,  #a6de5f 0%,#86bb42 100%);
+	background: linear-gradient(to bottom,  #a6de5f 0%,#86bb42 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6de5f', endColorstr='#86bb42',GradientType=0 ); 
+		border:1px solid rgba(0,0,0,0.5);
+		border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+}
+
+/* - sets color, background color, border and corner. */
+*.uc-button:hover, *.uc-button:active, .uc-button-hover, .uc-button-bg-color-hover:hover {
+	background-color: rgba(166,222,95,0.5);
+	background: -moz-linear-gradient(top,  rgba(166,222,95,0.5) 0%, rgba(134,187,66,0.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(166,222,95,0.5)), color-stop(100%,rgba(134,187,66,0.5)));
+	background: -webkit-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: -o-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	background: linear-gradient(to bottom,  rgba(166,222,95,0.5) 0%,rgba(134,187,66,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(166,222,95,0.5)', endColorstr='rgba(134,187,66,0.5)',GradientType=0 );
+	background-color:black;
+	border:1px solid rgba(255,255,255,0.3);
+}
+.uc-button-bg-color-hover:hover{
+	border:none;
+}
+/* selects dark / light tick png based on content background color and sets background color to light grey */
+.uc-button-bg-color--tick {
+	background-image: url('/assets/tick_light.png');
+
+}
+
+/* mselects dark / light tick png based on button background color and sets background color backgound color */
+.uc-button-bg-color--tick-highlight {
+	background-color:#ebf5df;
+	background-image: url('https://s3.amazonaws.com/pocketrecruit/assets/tick_dark.png');
+
+}
+
+
+
+/* content --------------------------------------------------------- */
+
+
+
+/* color and image */
+.uc-content-bg {
+	background-color:black; /*#313233;*/
+}
+
+/* solid or gradient user configured */
+.uc-content-bg-color {
+	background-color:black; /*#313233;*/
+}
+
+/* uses 0.4 in contrast_color function*/
+.uc-content-bg-color-color--contrast{
+	color:white;
+}
+
+.uc-content-bg-color--contrast{
+	background-color:white;
+}
+
+.uc-content-bg-color--highlight, *.uc-content-bg-color-hover--highlight:hover, *.uc-content-bg-color-active--highlight:active,  {
+		background-color:rgba(0,0,0,0.1);
+}
+
+
+/* if there is no background image this rule wont define an image */
+.uc-content-bg-image {
+	
+}
+
+.uc-content-bg-color-border-bottom--highlight {
+		border-bottom:1px solid rgba(0,0,0,0.2);/*this might have to be customisable to black if on a white background*/
+	
+	
+}
+
+.uc-content-bg-color-border-bottom--contrast {
+	border-bottom:1px solid #967c14;
+}
+
+
+
+/* color and family*/
+.uc-content-font {
+	font-family:impact, charcoal, sans-serif;
+	color:#454343; 
+
+}
+
+.uc-content-font-color {
+	color:#454343;
+}
+
+.uc-content-font-color {
+	color:#454343;
+}
+
+.uc-content-font-color-a a {
+	color:#454343;
+}
+
+.uc-content-font-family {
+	font-family:impact, charcoal, sans-serif;
+}
+
+.uc-content-font-link-color, .uc-content-font-link-color-a a {
+	color:#fe8132;
+}
+
+*.uc-content-font-link-color-bg-after:after, *.uc-content-font-link-color-bg-before:before {  
+	background-color:#fe8132;
+}
+
+*.uc-content-font-link-color:hover, .uc-content-font-link-color-hover, .uc-content-font-link-color-a a:hover {
+	color:#c46529;
+}
+
+*.uc-content-font-link-color:clicked, .uc-content-font-link-color-clicked, .uc-content-font-link-color-a a:clicked {
+	color:#c46529;
+}
+
+*.uc-content-font-link-color-border-after-a a:after, .uc-content-font-link-color-border-affter-li-a li a:after{
+	border-left: 10px solid #fe8132;
+}
+
+/*color and family*/
+.uc-content-font-title, h1.uc-content-font-title-header, h2.uc-content-font-title-header, h3.uc-content-font-title-header, h4.uc-content-font-title-header, h5.uc-content-font-title-header, h6.uc-content-font-title-header {
+	color:#86bb42; 
+	font-family:courier new, courier, monospace;
+}
+
+.uc-content-font-title-family {
+	font-family:courier new, courier, monospace;
+}
+
+.uc-content-font-title-color {
+	color:#86bb42; 
+}
+
+.uc-content-font-title-border-bottom, .uc-content-font-title-border-bottom-h1 h1 {
+	border-bottom:3px solid #86bb42;
+}
+
+*.uc-content-bg-color-input-bg-checked:checked{
+	background-color: #c8a61b;
+}
+/* footer --------------------------------------------------------- */
+
+.uc-footer-bg-color {
+	background-color:#d8ded3;
+}
+
+.uc-foooter-bg-color--brightness, .uc-footer-bg-color-a--brightness a{
+		background-color: rgba(0,0,0,0.3);
+}
+
+.uc-foooter-bg-color--more-brightness, .uc-footer-bg-color-a--more-brightness a, *.uc-footer-bg-color-hover--more-brightness {
+		background-color: rgba(0,0,0,0.5);
+}
+
+.uc-footer-font-color{
+	color: #55ffe0;
+}
+
+.uc-footer-font-link-color, .uc-footer-font-link-color-a a {
+	color:#fe8132; 
+	fill:#fe8132; 
+	
+}
+
+*.uc-footer-font-link-color-clicked:clicked, .uc-footer-font-link-color-clicked, *.uc-footer-font-link-color-hover:hover, .uc-footer-font-link-color-a a:hover {
+	color:#c46529;
+}
+
+/* - sets background color, font color */
+.uc-footer {
+	background-color:#d8ded3;
+	color: #55ffe0;
+}
+
+/* logo --------------------------------------------------------- */
+
+/*might be gradient*/
+.uc-logo-bg-color {
+	background-color: #d526d9;
+	background: -moz-linear-gradient(top,  #d526d9 0%, #212121 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d526d9), color-stop(100%,#212121));
+	background: -webkit-linear-gradient(top,  #d526d9 0%,#212121 100%);
+	background: -o-linear-gradient(top,  #d526d9 0%,#212121 100%);
+	background: -ms-linear-gradient(top,  #d526d9 0%,#212121 100%);
+	background: linear-gradient(to bottom,  #d526d9 0%,#212121 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d526d9', endColorstr='#212121',GradientType=0 );
+	background-color:#86bb42;
+}
+.uc-logo-bg-solid-color {
+	background-color:#86bb42;
+}
+
+.uc-logo-bg-solid-color--contrasting {
+	background-color:#6b9635;
+}
+
+.uc-logo-bg-solid-color--brightness {
+		color:rgba(0,0,0,0.5);/*this might have to be customisable to black if on a white background*/
+}
+
+/* navigation --------------------------------------------------------- */
+
+.uc-nav-text-color, .uc-nav-text-color-a a {
+		color:#ffffff;
+}
+
+.uc-nav-text-color--contrast, .uc-nav-text-color-hover--contrast:hover  {
+	color:#b3b3b3;
+}
+
+.uc-nav-text-color-bg-color--contrast, .uc-nav-text-color-hover-bg-color--contrast:hover  {
+	color:#b3b3b3;
+	background-color: rgba(255,0,0,0.5);background: -moz-linear-gradient(top,  rgba(255,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
+	background: -webkit-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	background: -o-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	background: linear-gradient(to bottom,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,0,0,0.5)', endColorstr='rgba(0,0,0,0.5)',GradientType=0 );
+	background-color:black;
+}
+
+.uc-nav-text-color-bg-color--more-contrast, .uc-nav-text-color-hover-bg-color--more-contrast:hover  {
+	color:#cccccc;
+	background-color: rgba(255,0,0,0.5);
+	background: -moz-linear-gradient(top,  rgba(255,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
+	background: -webkit-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	background: -o-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	background: linear-gradient(to bottom,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,0,0,0.5)', endColorstr='rgba(0,0,0,0.5)',GradientType=0 );
+	background-color:black;
+}
+
+
+
+/* - based on background color selects border-bottom:1px solid rgba(255,255,255,0.2) or border-bottom:1px solid rgba(0,0,0,0.2) */
+.uc-nav-bg-color-border--contrast {
+	
+}
+
+.uc-nav-bg-color, .uc-nav-bg-color--hover:hover {
+	background-color:#ff0000;
+	background-color: #ff0000;
+	background: -moz-linear-gradient(top,  #ff0000 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  #ff0000 0%,#000000 100%);
+	background: -o-linear-gradient(top,  #ff0000 0%,#000000 100%);
+	background: -ms-linear-gradient(top,  #ff0000 0%,#000000 100%);
+	background: linear-gradient(to bottom,  #ff0000 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#000000',GradientType=0 );
+	
+}
+
+/* - sets nav text color, border and background color */
+.uc-nav {
+	color:#ffffff;
+	background-color:#ff0000;
+	background-color: #ff0000;
+	background: -moz-linear-gradient(top,  #ff0000 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  #ff0000 0%,#000000 100%);
+	background: -o-linear-gradient(top,  #ff0000 0%,#000000 100%);
+	background: -ms-linear-gradient(top,  #ff0000 0%,#000000 100%);
+	background: linear-gradient(to bottom,  #ff0000 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#000000',GradientType=0 );
+	border-right:1px solid rgba(255,255,255,0.2);/*this might have to be customisable to black if on a white background*/
+}
+
+/* - sets contrast nav text color, contrast border and active background color*/
+.uc-nav-active--highlight:active, .uc-nav--highlight, .uc-nav-hover--highlight:hover{
+
+	color:#b3b3b3;
+			border-right:1px solid rgba(255,255,255,0.2);/*this might have to be customisable to black if on a white background*/
+
+			background-color: rgba(255,0,0,0.5);
+			background: -moz-linear-gradient(top,  rgba(255,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
+			background: -webkit-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+			background: -o-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+			background: -ms-linear-gradient(top,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+			background: linear-gradient(to bottom,  rgba(255,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,0,0,0.5)', endColorstr='rgba(0,0,0,0.5)',GradientType=0 );
+			background-color:black;	
+	
+}
+
+/* - 0.98 alpha slightly transparent */
+.uc-nav-bg-color--alpha {
+	background-color:rgba(255,0,0,0.98);
+}
+
+/* - depending on background color either darkens or lightens background color and to set the color of the box shadow */
+.uc-nav-bg-color-box-shadow--highlight {
+	-webkit-box-shadow:1px 0px 0px 0px #ff3333, 2px 0px 0px 0px #cc0000;
+	box-shadow:1px 0px 0px 0px #ff3333, 2px 0px 0px 0px #cc0000;
+	-moz-box-shadow:1px 0px 0px 0px #ff3333, 2px 0px 0px 0px #cc0000;
+}
+
+.uc-nav-bg-color-border--highlight {
+		border-bottom:1px solid rgba(255,255,255,0.2);/*this might have to be customisable to black if on a white background*/
+}
+/* - sets connect with us background color */
+
+.uc-connect-contacts-bg-color {
+	background-color:#f9f9f5;
+}
+.uc-flipperback-bg-color {
+	background-color:#49c9af !important;
+}
+.uc-flipperfront-bg-color {
+	background-color:#fe5c57;
+}
+.uc-flipper-title-font-color{
+	color:white !important;
+}
+.uc-sociallist-bg-color, .uc-opacity-bg-color {
+	background-color:rgba(0,0,0,0.2); /*needs to change if on dark background */
+}
+.uc-sociallist-bg-color:active, .uc-sociallist-bg-color:hover, .uc-sociallist-bg-color-hover {
+	background-color:rgba(0,0,0,0.4); /*needs to change if on dark background */
+}

@@ -1,0 +1,226 @@
+body /* Needs to be configured to be the same as #content in database */{
+	background-color:#eae7de;
+
+}
+h2 {
+	font-size:1.5em;
+}
+
+.row /* Needs to be configured to be the same as nav title in database */{
+	border-bottom:3px solid grey;
+	background-origin:padding-box;
+	padding:50px 0px;
+}
+
+.row.narrow {
+	padding:50px 50px;
+	background-origin:padding-box;
+}
+article {
+	text-align:left;
+}
+header {
+	box-shadow:0px 2px 2px rgba(0,0,0,0.4);
+}
+header, .navigation{
+	margin:0;
+	padding:0;
+}
+nav#mainNav {
+	background-color:inherit;
+	text-align:center;
+	padding:10px 0px;
+}
+nav#mainNav img {
+	height:40px;
+}
+nav#mainNav li {
+	display:inline-block;
+	line-height:40px;
+	vertical-align:middle;
+	cursor:pointer;
+	box-shadow:none;
+	padding:0px 20px;
+}
+nav#mainNav li:hover {
+	border-radius:5px;
+}
+#tnc ul {
+	padding:0;
+	margin:0;
+	line-height:40px;
+	vertical-align:middle;
+}
+/* General Slides */ 
+body {
+	font-size:1.25em;
+}
+h1 {
+	font-size:2em;
+	margin:0px;
+	padding:0px;
+}
+ul, ol {
+	list-style-type:none;
+}
+button, .button {
+	text-align:center;
+	padding:10px 30px;
+}
+.center {
+text-align: center;
+}
+.slide{
+	background-attachment: fixed; 
+	width:100%;
+	height:auto;
+	position: relative;
+	padding:0px;
+	min-width:640px;
+}
+.slide:nth-last-child(2) .row {
+	border-bottom:none;
+}
+footer.slide .row {
+	border-bottom:none;
+	padding:10px 0px;
+}
+section {
+	
+	padding:10px 0px;
+}
+
+.grid_1 .media img,
+.grid_2 .media img,
+.grid_3 .media img,
+.grid_4 .media img,
+.grid_5 .media img,
+.grid_6 .media img,
+.grid_7 .media img,
+.grid_8 .media img,
+.grid_9 .media img,
+.grid_10 .media img,
+.grid_11 .media img,
+.grid_12 .media img,
+.grid_1 .media iframe,
+.grid_2 .media iframe,
+.grid_3 .media iframe,
+.grid_4 .media iframe,
+.grid_5 .media iframe,
+.grid_6 .media iframe,
+.grid_7 .media iframe,
+.grid_8 .media iframe,
+.grid_9 .media iframe,
+.grid_10 .media iframe,
+.grid_11 .media iframe,
+.grid_12 .media iframe { 
+	
+	width: 100%; 
+}
+.video {
+	height: 0;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	position: relative;
+	overflow: hidden;
+	margin: 20px 0px;
+}
+.video iframe {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+.expand_header {
+	padding:5px 0px;
+}
+.expand_header {
+	margin:0px;
+}
+.collapsable_content {
+	margin-top:10px;
+}
+
+.collapsable {
+ 
+	display:block;
+  overflow:hidden;
+}
+
+.collapsable_transition {
+-webkit-transition:max-height 0.5s;
+	-moz-transition:max-height 0.5s;
+  -o-transition:max-height 0.5s;
+	transition:max-height 0.5s;
+}
+.grid_12 h3.collapse_expand, .grid12 .collapse_expand_read_more {
+	text-align:left;
+}
+
+h3.collapse_expand  {
+	cursor:pointer;
+	border-bottom:1px solid grey;
+	padding:10px 0px;
+	margin:0px;
+}
+.collapsed {
+ max-height:100px;   
+}
+
+.collapse_expand_read_more{
+	margin:10px 0px;
+	color:red;/*this needs to be the same as link colour */
+	cursor:pointer;
+}
+.collapse_expand_read_more.expand_icon:before {
+	content:"Read More";
+}
+.collapse_expand_read_more.collapse_icon:before{
+	
+	content:"Read Less";
+}
+
+#socialLinks {
+	float:right;
+}
+#socialLinks ul {
+	float:right;
+}
+#socialLinks li, #tnc li  {
+	display:inline;
+	margin-right:20px;
+}
+#socialLinks li:last-child {
+	margin-right:0px;
+}
+#socialLinks a {
+	text-decoration:none;
+	display:inline-block;	
+	
+	text-align:center;
+
+	margin:0;
+	
+	height:30px;
+
+}
+
+.socialMedia {
+	-webkit-filter: drop-shadow( 0px 1px 0px rgba(0,0,0,0.4) );
+            filter: drop-shadow( 0px 1px 0px rgba(0,0,0,0.4) );
+			fill:rgba(255,255,255,0.8);
+			background-color:rgba(0,0,0,0.2);
+			border-radius:2px;
+			box-shadow:inset 0px 1px 1px rgba(0,0,0,0.4);
+		padding:5px;
+}
+.socialMedia:hover {
+	fill:rgba(255,255,255,1);
+	background-color:rgba(0,0,0,0.5);
+	box-shadow:inset 0px 1px 1px rgba(0,0,0,0.6);
+
+}
+

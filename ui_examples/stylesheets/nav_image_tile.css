@@ -1,0 +1,35 @@
+.NavImageTile {
+	box-sizing:border-box;
+	position:relative;
+}
+.NavImageTile-text {
+	position: absolute;
+	z-index: 30;
+	bottom: 20px;
+}
+.NavImageTile .ImageTileGallery-list{
+	list-style-type:none;
+}
+
+
+li:nth-child(1).NavImageTile .ImageMedia-overlay,
+li:nth-child(3).NavImageTile .ImageMedia-overlay,
+li:nth-child(6).NavImageTile .ImageMedia-overlay, 
+li:nth-child(8).NavImageTile .ImageMedia-overlay, 
+li:nth-child(9).NavImageTile .ImageMedia-overlay, 
+li:nth-child(11).NavImageTile .ImageMedia-overlay,
+li:nth-child(14).NavImageTile .ImageMedia-overlay, 
+li:nth-child(16).NavImageTile .ImageMedia-overlay  {
+	opacity: 0.4;
+}
+
+li:nth-child(1).NavImageTile .ImageMedia-overlay:hover,
+li:nth-child(3).NavImageTile .ImageMedia-overlay:hover,
+li:nth-child(6).NavImageTile .ImageMedia-overlay:hover, 
+li:nth-child(8).NavImageTile .ImageMedia-overlay:hover, 
+li:nth-child(9).NavImageTile .ImageMedia-overlay:hover, 
+li:nth-child(11).NavImageTile .ImageMedia-overlay:hover,
+li:nth-child(14).NavImageTile .ImageMedia-overlay:hover, 
+li:nth-child(16).NavImageTile .ImageMedia-overlay:hover  {
+	opacity: 0.6;
+}
